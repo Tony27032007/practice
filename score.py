@@ -6,9 +6,9 @@ for i in range(0,4):
     a.append(score)
     a[i]=float(a[i])
 s=a[0]+a[1]+a[2]+a[3]   
-s=s//4
+s=s/4
 print("your name is: ", name)
-print("your avg score is: ", s)
+print("your avg score is: ", s, "%")
 if s>=90:
     print("Excellent ")
 elif s>=80 and s<90:
