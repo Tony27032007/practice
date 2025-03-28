@@ -1,10 +1,16 @@
 name=input("Enter your name: ")
-a=[1,2,3,4]
-a.clear()
-for i in range(0,4):
-    score=input("Enter your score/100:")
-    a.append(score)
-    a[i]=float(a[i])
+a=[]
+x=0
+while x<4:
+    print("Enter your score for subject ", x+1)
+    score=input()
+    score=int(score)
+    if score<0 or score>100:
+        print("You're joking me? Enter a VALID score NOW")
+    else:  
+       a.append(score)
+       a[x]=float(a[x])
+       x=x+1
 s=a[0]+a[1]+a[2]+a[3]   
 s=s/4
 print("your name is: ", name)
