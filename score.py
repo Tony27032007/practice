@@ -1,14 +1,12 @@
 name=input("Enter your name: ")
-a=[]
+a=[1,2,3,4]
+a.clear()
 for i in range(0,4):
     score=input("Enter your score/100:")
     a.append(score)
-score=int(a[0])
-score=int(a[1])         
-score=int(a[2])
-score=int(a[3])
-s=score[0]+score[1]+score[2]+score[3]
-s=s/4
+    a[i]=float(a[i])
+s=a[0]+a[1]+a[2]+a[3]   
+s=s//4
 print("your name is: ", name)
 print("your avg score is: ", s)
 if s>=90:
