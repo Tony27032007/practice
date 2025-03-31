@@ -5,7 +5,7 @@ with open('scores.csv','r') as file:
       header = next(csv_reader)
       for row in csv_reader:
             row.append(row)
-            row[2]=int(row[2])
-            if row[2]>=70:
-               print(row)
+            row[1]=int(row[1])
+            if row[1]>=70:
+               print(row[0])
             
