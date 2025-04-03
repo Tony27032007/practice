@@ -1,0 +1,10 @@
+import tkinter as tk
+root=tk.Tk()
+root.geometry("1000x1000")
+left_frame = tk.Frame(root, bg="#C397C3", width=40, height=1000)
+left_frame.pack(side="left", fill="both", expand=True)
+left_label = tk.Label(left_frame, text="Section 1", fg="black", bg="#C397C3")
+right_frame = tk.Frame(root, bg="#C397C3", width=40, height=1000)
+right_frame.pack(side="right", fill="both", expand=True)
+right_label = tk.Label(right_frame, text="Section 1", fg="black", bg="black")
+root.mainloop()
