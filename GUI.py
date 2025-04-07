@@ -1,12 +1,14 @@
-import tkinter as tk
-root=tk.Tk()
-root.geometry("1000x1000")
-left_frame = tk.Frame(root, bg="#C397C3", width=400, height=1000)
-left_frame.pack(side="left", fill="both", expand=False)
-left_label = tk.Label(left_frame, text="Section 1", fg="black", bg="#C397C3")
-right_frame = tk.Frame(root, bg="#C397C3", width=400, height=1000)
-right_frame.pack(side="right", fill="both", expand=False)
-right_label = tk.Label(right_frame, text="Section 1", fg="black", bg="black")
-butoon1 = tk.Button(left_frame, text="Button 1", fg="black", bg="blue", width=40, height=5)
-butoon1.pack()
-root.mainloop()
+import customtkinter
+
+def button_callback():
+    print("button clicked")
+
+customtkinter.set_default_color_theme("dark-blue")
+
+app = customtkinter.CTk()
+app.geometry("1920x1080")
+
+button = customtkinter.CTkButton(app, text="my button", fg_color='green', command=button_callback)
+button.pack(padx=20, pady=20)
+
+app.mainloop()
